@@ -1,7 +1,11 @@
-# 🔐 VaultGuard – Secure Credential Manager
+<h1 align="center">
+  🔐 VaultGuard – Secure Credential Manager
+</h1>
 
-A clean and responsive **credential management** app built using **HTML**, **Tailwind CSS**, and **Vanilla JavaScript**.  
-VaultGuard allows users to securely store, view, edit, and delete credentials right in the browser, with data persisted using **LocalStorage**.
+<p align="center">
+  A clean and responsive <b>credential management</b> app built using <b>HTML</b>, <b>Tailwind CSS</b>, and <b>Vanilla JavaScript</b>.  
+  VaultGuard allows users to securely store, view, edit, and delete credentials right in the browser, with data persisted using <b>LocalStorage</b>.
+</p>
 
 ---
 
