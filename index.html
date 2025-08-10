@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VaultGuard 🔐 - A Secure Vault for All Your Credentials</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./vaultguard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+  </head>
+  <body
+    class="bg-[#161e2d] bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen flex flex-col"
+    style="font-family: 'Rubik', sans-serif"
+  >
+    <!-- Header -->
+    <header class="p-6 text-center bg-gray-900 shadow-md">
+      <h1 class="text-4xl font-bold font-sans tracking-wide">VaultGuard 🔐</h1>
+      <p class="text-gray-400 mt-1 text-sm">
+        Your secure space for credentials
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow p-6 max-w-3xl mx-auto space-y-8">
+      <!-- Add New Credential Form -->
+      <section>
+        <div
+          class="inline text-center md:flex items-center justify-between mb-4"
+        >
+          <h2 class="text-2xl font-semibold">Add New Credential</h2>
+          <div
+            class="flex items-center gap-2 justify-center md:justify-end m-[10px_10px_20px] md:m-0"
+          >
+            <p class="capitalize text-base text-gray-300/80">Edit Controls</p>
+            <div
+              id="toggler-container"
+              class="w-8 h-[16px] bg-gray-500 rounded-xl flex"
+            >
+              <div
+                id="toggler"
+                class="h-full w-1/2 rounded-full bg-white"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <form class="bg-gray-800 rounded-xl p-6 shadow space-y-4">
+          <input
+            type="text"
+            id="service"
+            name="service"
+            placeholder="Service (e.g. Gmail)"
+            class="w-full p-3 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Email / Username"
+            class="w-full p-3 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            class="w-full p-3 rounded-lg bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+          <button
+            id="saveCredential"
+            type="submit"
+            class="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition uppercase cursor-pointer"
+          >
+            Save
+          </button>
+        </form>
+      </section>
+
+      <!-- Saved Credentials List -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Saved Credentials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="credentialsList">
+          <p class="text-gray-400" id="emptyMessage">
+            <!-- No credentials saved yet -->
+            🔐 No secrets stored yet... ready when you are!
+          </p>
+          <!-- Example Credential Card -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center text-sm text-gray-500 bg-gray-900">
+      VaultGuard © 2025 | Built by
+      <a class="text-blue-400 underline" href="https://github.com/Panchal-Zeel"
+        >Zeel</a
+      >
+      ✨
+    </footer>
+
+    <script src="./vaultguard_script.js"></script>
+  </body>
+</html>
