@@ -97,3 +97,5 @@ MIT License © 2025 Zeel Panchal
 [GitHub Profile](https://github.com/Panchal-Zeel)
 
 ---
+
+<!-- Keywords: password manager, credential manager, vaultguard, tailwind css project, javascript password storage, localstorage credential manager, responsive web app -->
